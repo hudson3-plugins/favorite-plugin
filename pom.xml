@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.eclipse.hudson.plugins</groupId>
+        <artifactId>hudson-plugin-parent</artifactId>    
+        <version>3.0.0-RC2</version>
+    </parent>
+    
+    <groupId>org.hudsonci.plugins</groupId>
+    <artifactId>favorite</artifactId>
+    <version>1.10-h-1-SNAPSHOT</version>
+    <packaging>hpi</packaging>
+    
+    <name>Favorite</name>
+    
+    <url>http://wiki.hudson-ci.org/display/HUDSON/Favorite+Plugin</url>
+    
+    <properties>
+        <hudsonTags>utils</hudsonTags>
+    </properties>
+  
+    <licenses>
+        <license>
+            <name>The MIT license</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+    <description> 
+       This plugin allows you to mark a job a favorite. This is controlled via a 
+       list view column you need to add to a view. You can then click on a star 
+        to favorite or unfavorite a job. There is also a job filter to allow you 
+        to create a view that only shows your favorites.
+    </description>
+    
+    <scm>
+        <connection>scm:git:https://github.com/hudson3-plugins/favorite-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/hudson3-plugins/favorite-plugin.git</developerConnection>
+        <url>https://github.com/hudson3-plugins/favorite-plugin</url>
+    </scm>
+     
+    <developers>
+        <developer>
+            <id>wjprakash</id>
+            <name>Winston Prakash</name>
+            <email>winston.prakash@gmail.com</email>
+            <roles>
+                <role>
+                    Maintainer
+                </role>
+            </roles>
+        </developer>
+        <developer>
+            <id>lshatzer</id>
+            <name>Larry Shatzer, Jr.</name>
+            <email>larrys@gmail.com</email>
+        </developer>
+    </developers>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.hudsonci.plugins</groupId>
+            <artifactId>token-macro</artifactId>
+            <version>1.6-h-1</version>
+        </dependency>
+    </dependencies>
+</project>  
+<!--
+   TODOs:
+    * Add "Auto Favorite" feature
+      * If you contribute to a build, you favorite it automatically.
+    * Clean up look and feel of user config page.
+-->
