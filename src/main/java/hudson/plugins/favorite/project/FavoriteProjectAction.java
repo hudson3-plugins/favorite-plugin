@@ -9,7 +9,7 @@ import hudson.model.Hudson;
 import hudson.model.User;
 import hudson.plugins.favorite.Messages;
 import hudson.plugins.favorite.user.FavoriteUserProperty;
-import org.springframework.security.Authentication;
+import org.springframework.security.core.Authentication;
 
 public class FavoriteProjectAction implements Action {
     final private AbstractProject<?, ?> project;

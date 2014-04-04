@@ -9,7 +9,7 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 
 import java.io.IOException;
-import org.springframework.security.Authentication;
+import org.springframework.security.core.Authentication;
 
 public class FavoritePlugin extends Plugin {
     public void doToggleFavorite(StaplerRequest req, StaplerResponse resp, @QueryParameter String job, @QueryParameter String userName, @QueryParameter Boolean redirect) throws IOException {

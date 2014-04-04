@@ -11,7 +11,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.springframework.security.Authentication;
+import org.springframework.security.core.Authentication;
 
 public class FavoriteFilter extends ViewJobFilter {
     @DataBoundConstructor
